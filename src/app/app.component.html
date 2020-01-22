@@ -1,0 +1,379 @@
+<div [ngClass]="{'mx-3': !isRotate, 'rotate':isRotate}">
+  <div class="row">
+    <div class="col-4"
+      style="padding:0;padding-right:20px; padding-bottom:20px; border-right:1px dashed #000000;">
+      <section>
+        <div class="type"><strong>Original</strong></div>
+        <div class="logo space-btw-fields">
+          <img src="../assets/img/3.png" alt="">
+        </div>
+        <div class="row space-btw-fields top-heading">
+          <div class="col-6">
+            <div class="textfield-serial-no">
+              <span>S.No.</span><input [(ngModel)]="sno" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="4444">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="textfield-date">
+              <input [(ngModel)]="date1" type="text" class="form-control form-control-sm" id="inputEmail3"
+                placeholder="01/01/2020"><span>Date:</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 text-center text-uppercase"><h4>Delivery order</h4></div>
+        <div class="textfield-ms space-btw-fields">
+          <span>M/s:</span><input [(ngModel)]="ms" type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Name">
+        </div>
+        <div class="textfield-address space-btw-fields">
+          <span>Address:</span><input [(ngModel)]="address1"  type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Address">
+        </div>
+        <div class="textfield-gstin space-btw-fields">
+          <span>GSTIN:</span><input [(ngModel)]="GSTIN1" type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add GSTIN Details">
+        </div>
+        <div class="row space-btw-fields">
+          <div class="col-8">
+            <div class="textfield-challan-no">
+              <span>Challan No:</span><input [(ngModel)]="challan" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="Add Challan No.">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="textfield-date-2">
+              <span>Date:</span><input type="text" [(ngModel)]="date2" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="01/01/2020">
+            </div>
+          </div>
+        </div>
+        <div class="row space-btw-fields">
+          <div class="col-7">
+            <div class="textfield-particulars">
+              <span>Particulars:</span><input [(ngModel)]="particular" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="Add Particular Details">
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="textfield-weight">
+              <span>Weight:</span><input [(ngModel)]="weight" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="Add Weight">
+            </div>
+          </div>
+        </div>
+        <div class="textfield-sold-to-ms space-btw-fields">
+          <span>Sold to M/s:</span><input [(ngModel)]="soldms" type="text" class="form-control form-control-sm"
+            id="inputEmail3" placeholder="Add Customer Name">
+        </div>
+        <div class="textfield-address space-btw-fields">
+          <span>Address:</span><input [(ngModel)]="address2" type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Address">
+        </div>
+        <div class="textfield-gstin space-btw-fields">
+          <span>GSTIN:</span><input type="text" [(ngModel)]="GSTIN2" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Customer GSTIN Detials">
+        </div>
+        <div class="row space-btw-fields">
+          <div class="col-8">
+            <div class="textfield-challan-no">
+              <span>Invoice No:</span><input [(ngModel)]="invoice" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="add invoice no.">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="textfield-date-2">
+              <span>Date:</span><input type="text" [(ngModel)]="date3" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="01/01/2020">
+            </div>
+          </div>
+        </div>
+        <div class="row bottom-space">
+          <div class="col-8">
+            <div class="row">
+              <div class="col-8">
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line1_1" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line2_1" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line3_1" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line1_2" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line2_2" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line3_2" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="signature">
+              <img src="../assets/img/4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="col-4" style="padding:0;padding-left:20px;padding-right:20px;padding-bottom:20px;border-right:1px dashed #000000;">
+      <section>
+        <div class="type"><strong>Duplicate</strong></div>
+        <div class="logo space-btw-fields">
+          <img src="../assets/img/3.png" alt="">
+        </div>
+        <div class="row space-btw-fields top-heading">
+          <div class="col-6">
+            <div class="textfield-serial-no">
+              <span>S.No.</span><input [(ngModel)]="sno" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="4444">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="textfield-date">
+              <input [(ngModel)]="date1" type="text" class="form-control form-control-sm" id="inputEmail3"
+                placeholder="01/01/2020"><span>Date:</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 text-center text-uppercase"><h4>Delivery order</h4></div>
+        <div class="textfield-ms space-btw-fields">
+          <span>M/s:</span><input [(ngModel)]="ms" type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Name">
+        </div>
+        <div class="textfield-address space-btw-fields">
+          <span>Address:</span><input [(ngModel)]="address1"  type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Address">
+        </div>
+        <div class="textfield-gstin space-btw-fields">
+          <span>GSTIN:</span><input [(ngModel)]="GSTIN1" type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add GSTIN Details">
+        </div>
+        <div class="row space-btw-fields">
+          <div class="col-8">
+            <div class="textfield-challan-no">
+              <span>Challan No:</span><input [(ngModel)]="challan" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="Add Challan No.">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="textfield-date-2">
+              <span>Date:</span><input type="text" [(ngModel)]="date2" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="01/01/2020">
+            </div>
+          </div>
+        </div>
+        <div class="row space-btw-fields">
+          <div class="col-7">
+            <div class="textfield-particulars">
+              <span>Particulars:</span><input [(ngModel)]="particular" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="Add Particular Details">
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="textfield-weight">
+              <span>Weight:</span><input [(ngModel)]="weight" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="Add Weight">
+            </div>
+          </div>
+        </div>
+        <div class="textfield-sold-to-ms space-btw-fields">
+          <span>Sold to M/s:</span><input [(ngModel)]="soldms" type="text" class="form-control form-control-sm"
+            id="inputEmail3" placeholder="Add Customer Name">
+        </div>
+        <div class="textfield-address space-btw-fields">
+          <span>Address:</span><input [(ngModel)]="address2" type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Address">
+        </div>
+        <div class="textfield-gstin space-btw-fields">
+          <span>GSTIN:</span><input type="text" [(ngModel)]="GSTIN2" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Customer GSTIN Detials">
+        </div>
+        <div class="row space-btw-fields">
+          <div class="col-8">
+            <div class="textfield-challan-no">
+              <span>Invoice No:</span><input [(ngModel)]="invoice" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="add invoice no.">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="textfield-date-2">
+              <span>Date:</span><input type="text" [(ngModel)]="date3" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="01/01/2020">
+            </div>
+          </div>
+        </div>
+        <div class="row bottom-space">
+          <div class="col-8">
+            <div class="row">
+              <div class="col-8">
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line1_1" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line2_1" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line3_1" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line1_2" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line2_2" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line3_2" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="signature">
+              <img src="../assets/img/4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="col-4" style="padding:0;padding-left:20px; padding-bottom:20px;">
+      <section>
+        <div class="type"><strong>Triplicate</strong></div>
+        <div class="logo space-btw-fields">
+          <img src="../assets/img/3.png" alt="">
+        </div>
+        <div class="row space-btw-fields top-heading">
+          <div class="col-6">
+            <div class="textfield-serial-no">
+              <span>S.No.</span><input [(ngModel)]="sno" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="4444">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="textfield-date">
+              <input [(ngModel)]="date1" type="text" class="form-control form-control-sm" id="inputEmail3"
+                placeholder="01/01/2020"><span>Date:</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 text-center text-uppercase"><h4>Delivery order</h4></div>
+        <div class="textfield-ms space-btw-fields">
+          <span>M/s:</span><input [(ngModel)]="ms" type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Name">
+        </div>
+        <div class="textfield-address space-btw-fields">
+          <span>Address:</span><input [(ngModel)]="address1"  type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Address">
+        </div>
+        <div class="textfield-gstin space-btw-fields">
+          <span>GSTIN:</span><input [(ngModel)]="GSTIN1" type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add GSTIN Details">
+        </div>
+        <div class="row space-btw-fields">
+          <div class="col-8">
+            <div class="textfield-challan-no">
+              <span>Challan No:</span><input [(ngModel)]="challan" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="Add Challan No.">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="textfield-date-2">
+              <span>Date:</span><input type="text" [(ngModel)]="date2" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="01/01/2020">
+            </div>
+          </div>
+        </div>
+        <div class="row space-btw-fields">
+          <div class="col-7">
+            <div class="textfield-particulars">
+              <span>Particulars:</span><input [(ngModel)]="particular" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="Add Particular Details">
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="textfield-weight">
+              <span>Weight:</span><input [(ngModel)]="weight" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="Add Weight">
+            </div>
+          </div>
+        </div>
+        <div class="textfield-sold-to-ms space-btw-fields">
+          <span>Sold to M/s:</span><input [(ngModel)]="soldms" type="text" class="form-control form-control-sm"
+            id="inputEmail3" placeholder="Add Customer Name">
+        </div>
+        <div class="textfield-address space-btw-fields">
+          <span>Address:</span><input [(ngModel)]="address2" type="text" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Address">
+        </div>
+        <div class="textfield-gstin space-btw-fields">
+          <span>GSTIN:</span><input type="text" [(ngModel)]="GSTIN2" class="form-control form-control-sm" id="inputEmail3"
+            placeholder="Add Customer GSTIN Detials">
+        </div>
+        <div class="row space-btw-fields">
+          <div class="col-8">
+            <div class="textfield-challan-no">
+              <span>Invoice No:</span><input [(ngModel)]="invoice" type="text" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="add invoice no.">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="textfield-date-2">
+              <span>Date:</span><input type="text" [(ngModel)]="date3" class="form-control form-control-sm"
+                id="inputEmail3" placeholder="01/01/2020">
+            </div>
+          </div>
+        </div>
+        <div class="row bottom-space">
+          <div class="col-8">
+            <div class="row">
+              <div class="col-8">
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line1_1" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line2_1" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line3_1" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line1_2" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line2_2" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+                <div class="textfield-date-2">
+                  <input type="text" [(ngModel)]="line3_2" class="form-control form-control-sm w-100" id="inputEmail3">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="signature">
+              <img src="../assets/img/4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="row">
+    
+    <div class="col-12 text-center" style="padding:0;padding-top:20px;">
+      <!--print button-->
+      <button (click)="rotateToggle()">rotate</button>
+      <button (click)="landscape($event)">print landscape</button>
+    </div>
+  </div>
+</div>
