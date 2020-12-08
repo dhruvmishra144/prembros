@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "prembrosreceipt"
+  },
+  "targets": {
+    "prembrosreceipt": {
+      "hosting": {
+        "prembro": [
+          "prembrosreceipt"
+        ]
+      }
+    }
   }
 }

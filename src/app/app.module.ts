@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import {NgxPrintModule} from 'ngx-print';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule, AngularFirestoreDocument } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,9 @@ import {NgxPrintModule} from 'ngx-print';
     BrowserModule,
     AppRoutingModule,
     NgxPrintModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
