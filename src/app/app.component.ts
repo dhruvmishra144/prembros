@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.afs.collection('serialNumber').valueChanges().subscribe(val =>{
       val.forEach(element =>{
-        this.sno = element['number'];
+        // this.sno = element['number'];
       });
       
     })
@@ -51,9 +51,9 @@ export class AppComponent implements OnInit {
     window.print();
     let num = Number(this.sno);
     num = num + 1;
-   this.afs.collection('serialNumber').doc('data').update({
-     number: num
-   });
+  //  this.afs.collection('serialNumber').doc('data').update({
+  //    number: num
+  //  });
     
   }
   rotateToggle(){
