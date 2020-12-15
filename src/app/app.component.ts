@@ -44,13 +44,19 @@ export class AppComponent implements OnInit {
       });
       
     })
-    
+    let num = localStorage.getItem('latestNum');
+    console.log(num);
+    this.sno = num;
  }
 
   landscape($event){
     window.print();
-    let num = Number(this.sno);
+    var num = Number(this.sno);
     num = num + 1;
+    localStorage.setItem('latestNum', JSON.stringify(num));
+    console.log(num);
+    
+
   //  this.afs.collection('serialNumber').doc('data').update({
   //    number: num
   //  });
